@@ -1,18 +1,45 @@
-filetype on
-filetype plugin on
-syntax enable
+" own config
+set tw=80 number ruler
+
+" pathogen
+let g:pathogen_disabled = [ 'pathogen' ]    " don't load self 
+let g:LustyJugglerSuppressRubyWarning = 1
+call pathogen#infect()                      " load everyhting else
+call pathogen#helptags()                    " load plugin help files
+
+" code folding
+set foldmethod=indent
+set foldlevel=2
+set foldnestmax=4
+
+" indentation
 set autoindent
-set foldmethod=marker
-set ts=4
-set wildmenu
-set wildmode=list:longest,full
-set number
-set expandtab
+set softtabstop=4 shiftwidth=4 expandtab
 
-if !exists("autocommands_loaded")
-  let autocommands_loaded = 1
-  autocmd BufRead,BufNewFile,FileReadPost *.py source ~/.vim/python
-endif
+" visual
+highlight Normal ctermbg=black
+set background=dark
+set cursorline
+set t_Co=256
 
-" This beauty remembers where you were the last time you edited the file, and returns to the same position.
-au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
+" syntax highlighting
+syntax on
+filetype on                 " enables filetype detection
+filetype plugin indent on   " enables filetype specific plugins
+
+" colorpack
+colorscheme vibrantink
+
+" gundo
+nnoremap <F5> :GundoToggle<CR>
+
+" lusty
+set hidden
+
+" pep8
+let g:pep8_map='<leader>8'
+
+" supertab
+au FileType python set omnifunc=pythoncomplete#Complete
+let g:SuperTabDefaultCompletionType = "context"
+set completeopt=menuone,longest,preview
