@@ -1,13 +1,23 @@
-" own config
+" line features
 set number ruler
-set wildmenu
+
+" enable backspace
+set backspace=indent,eol,start
+
+" command composition
 set showcmd
+
+" menu
+set wildmenu
 
 " pathogen
 let g:pathogen_disabled = [ 'pathogen' ]    " don't load self 
 let g:LustyJugglerSuppressRubyWarning = 1
 call pathogen#infect()                      " load everyhting else
 call pathogen#helptags()                    " load plugin help files
+
+" wrapping
+set textwidth=80
 
 " code folding
 set foldmethod=indent
@@ -16,7 +26,7 @@ set foldnestmax=4
 
 " indentation
 set autoindent
-set softtabstop=4 shiftwidth=4 expandtab
+set ts=4 shiftwidth=4 expandtab
 
 " visual
 highlight Normal ctermbg=black
