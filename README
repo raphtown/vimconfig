@@ -2,7 +2,9 @@
 * sudo port install vim +python
 
 2) Initialize and update submodules
-* git submodule init
-* git submodule update
-* git submodule foreach git submodule init
-* git submodule foreach git submodule update
+```bash
+git submodule init
+git submodule update
+git submodule foreach git submodule init
+git submodule foreach git submodule update
+```
