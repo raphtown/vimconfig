@@ -1,5 +1,7 @@
 " own config
-set tw=80 number ruler
+set number ruler
+set wildmenu
+set showcmd
 
 " pathogen
 let g:pathogen_disabled = [ 'pathogen' ]    " don't load self 
@@ -31,13 +33,13 @@ filetype plugin indent on   " enables filetype specific plugins
 colorscheme vibrantink
 
 " gundo
-nnoremap <F5> :GundoToggle<CR>
+nnoremap <F6> :GundoToggle<CR>
 
 " lusty
 set hidden
 
 " pep8
-let g:pep8_map='<leader>8'
+" let g:pep8_map='<F6>'
 
 " supertab
 au FileType python set omnifunc=pythoncomplete#Complete
