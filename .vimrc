@@ -19,11 +19,6 @@ call pathogen#helptags()                    " load plugin help files
 " wrapping
 set textwidth=80
 
-" code folding
-set foldmethod=indent
-set foldlevel=2
-set foldnestmax=4
-
 " indentation
 set autoindent
 set ts=4 shiftwidth=4 expandtab
