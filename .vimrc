@@ -51,4 +51,7 @@ au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
 
+" nerdtree
+map <F5> :NERDTreeToggle<CR>
+
 autocmd bufnewfile *.py so header/py_header
