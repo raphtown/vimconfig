@@ -40,3 +40,9 @@
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
+[submodule "bundle/snipmate-snippet"]
+	path = bundle/snipmate-snippet
+	url = https://github.com/honza/snipmate-snippets.git
+[submodule "bundle/vim2hs"]
+	path = bundle/vim2hs
+	url = https://github.com/dag/vim2hs.git

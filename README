@@ -21,4 +21,5 @@ git submodule foreach git submodule update
 
 To add a new submodule:
 
-git submodule add https://github.com/user/package.git ~/.vim/bundle/package
+PACKAGE=YOUR_PACKAGE_HERE
+cd ~/.vim; git submodule add https://github.com/dag/$PACKAGE.git bundle/$PACKAGE 
