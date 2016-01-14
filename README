@@ -24,3 +24,9 @@ To add a new submodule:
 PACKAGE=YOUR_PACKAGE_HERE
 GITHUB_USER=GITHUB_USER_HERE
 cd ~/.vim; git submodule add https://github.com/$GITHUB_USER/$PACKAGE.git bundle/$PACKAGE 
+
+To update all existing submodules:
+
+git submodule foreach git pull origin master
+git commit -a -m "Update submodules"
+git push
