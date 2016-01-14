@@ -35,16 +35,14 @@ filetype on                 " enables filetype detection
 filetype plugin indent on   " enables filetype specific plugins
 
 " colorpack
-" colorscheme vibrantink
+colorscheme vibrantink
 
 " gundo
-nnoremap <F6> :GundoToggle<CR>
+nnoremap <C-u> :GundoToggle<CR>
+let g:gundo_close_on_revert = 1
 
 " lusty
 set hidden
-
-" pep8
-" let g:pep8_map='<F6>'
 
 " supertab
 au FileType python set omnifunc=pythoncomplete#Complete
@@ -52,7 +50,7 @@ let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
 
 " nerdtree
-map <F5> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeToggle<CR>
 
 autocmd bufnewfile *.py so header/py_header
 
