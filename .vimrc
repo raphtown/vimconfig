@@ -35,7 +35,7 @@ filetype on                 " enables filetype detection
 filetype plugin indent on   " enables filetype specific plugins
 
 " colorpack
-colorscheme vibrantink
+" colorscheme vibrantink
 
 " gundo
 nnoremap <F6> :GundoToggle<CR>
@@ -55,3 +55,6 @@ set completeopt=menuone,longest,preview
 map <F5> :NERDTreeToggle<CR>
 
 autocmd bufnewfile *.py so header/py_header
+
+
+let g:pymode_rope=0
