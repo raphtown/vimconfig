@@ -55,7 +55,6 @@ map <C-n> :NERDTreeToggle<CR>
 " pymode
 let g:pymode_rope=0
 let g:pymode_lint_on_fly=1
-let g:pymode_lint_ignore = "W0611"
 
 " display current file
 set laststatus=2
