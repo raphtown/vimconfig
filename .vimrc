@@ -56,7 +56,7 @@ map <C-n> :NERDTreeToggle<CR>
 let g:pymode_rope=1
 let g:pymode_lint_on_fly=1
 
-let g:pymode_lint_checkers = ['flake8', 'mccabe', 'pep8']
+let g:pymode_lint_checkers = ['flake8', 'mccabe', 'pep8', 'pep257']
 let g:pymode_lint_ignore = ["D203","C901","W0612","E402"]
 let g:pymode_options_max_line_length=79
 let g:pymode_lint_message = 1
