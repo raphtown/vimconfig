@@ -6,9 +6,10 @@ For Mac: sudo port install vim +python
 
 git clone https://github.com/raphtown/vimconfig.git ~/.vim
 
-3) Symbolic link to .vimrc
+3) Symbolic link to .vimrc and .tmux.conf
 
 ln -s ~/.vim/.vimrc ~/.vimrc
+ln -s ~/.vim/.tmux.conf ~/.tmux.conf
 
 4) Initialize and update submodules
 
