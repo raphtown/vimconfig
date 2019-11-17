@@ -53,7 +53,7 @@ set completeopt=menuone,longest,preview
 map <C-n> :NERDTreeToggle<CR>
 
 " pymode
-let g:pymode_rope=1
+let g:pymode_rope=0
 let g:pymode_lint_on_fly=1
 
 let g:pymode_lint_checkers = ['flake8', 'mccabe', 'pep8']
