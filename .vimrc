@@ -1,4 +1,3 @@
-line features
 set number ruler
 
 " enable backspace
@@ -57,8 +56,8 @@ let g:pymode_rope=0
 let g:pymode_lint_on_fly=1
 let g:pymode_folding = 0
 
-let g:pymode_lint_checkers = ['flake8', 'mccabe', 'pep8', 'pylint', 'pyflakes']
-let g:pymode_lint_ignore = ["D203","C901","W0612","E402"]
+let g:pymode_lint_checkers = ['mccabe', 'pep8', 'pylint']
+let g:pymode_lint_ignore = ["W0612"]
 let g:pymode_options_max_line_length=79
 let g:pymode_lint_message = 1
 
