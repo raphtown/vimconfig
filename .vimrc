@@ -55,7 +55,9 @@ map <C-n> :NERDTreeToggle<CR>
 " pymode
 let g:pymode_rope=0
 let g:pymode_lint_on_fly=1
-let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'mccabe', 'pep257']
+let g:pymode_folding = 0
+let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'mccabe']
+let g:pymode_lint_ignore = ["W0612"]
 
 " display current file
 set laststatus=2

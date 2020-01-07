@@ -43,3 +43,6 @@
 [submodule "bundle/vim-unimpaired"]
 	path = bundle/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "bundle/SimpylFold"]
+	path = bundle/SimpylFold
+	url = https://github.com/tmhedberg/SimpylFold.git
